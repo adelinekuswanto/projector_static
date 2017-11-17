@@ -928,12 +928,12 @@ section#joinMailingList {
     padding-top: 0px;
 }
 
-/*slick slider*/
+/* Slick Slider */
 .slick-slide:focus {
     outline: 1px solid transparent;
 }
 
-.slick-coming-soon .slick-slide {
+.slick-slider .slick-slide {
     -webkit-opacity: 0.2;
     -moz-opacity: 0.2;
     opacity: 0.2;
@@ -941,9 +941,7 @@ section#joinMailingList {
 }
 
 .slick-active.slick-center {
-
     opacity: 1;
-
 }
 
 .slide-caption {
@@ -962,37 +960,27 @@ section#joinMailingList {
     -ms-transition: all 3s ease;
     -o-transition: all 3s ease;
     transition: all 3s ease;
-
 }
 
-.slick-coming-soon div.slick-slide {
+.slick-slide {
     height: 300px !important;
+    width: 250px !important;
 }
 
-.slide-caption {
-
+.slide-content {
     color: white;
     padding: 15% 10%;
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
     height: 100%;
-    overflow: scroll;
+    overflow: hidden;
     background: rgba(0, 0, 0, 0.5);
-    /*background-clip:content-box;*/
-
 }
 
-.slide-caption .title {
-    font-size: 0.8em;
-    letter-spacing: 1px;
-    font-weight: 700;
-    width: 80%;
-}
-
-.slide-caption .mov-desc {
+.movie-description {
     font-size: 0.7em;
     color: rgb(210, 210, 210);
 }
