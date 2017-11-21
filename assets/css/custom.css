@@ -214,6 +214,73 @@ hr {
 
 }
 
+/* Sidebar */
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    position: relative;
+    display: block;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: rgb(189, 159, 95);
+}
+
+.list-group-item,
+.list-group-item > a,
+.list-group-item > a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.list-group-item.active,
+.list-group-item.active > a,
+.list-group-item.active > a:hover {
+    color: rgb(189, 159, 95);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar-badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 0 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.list-group-item.active > .sidebar-badge {
+    color: rgb(189, 159, 95);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: inherit;
+    border: none;
+}
+
 .tab-content {
     padding: 15px 0;
 }
@@ -249,9 +316,9 @@ hr {
 
 .breadcrumb {
     background-color: transparent;
-    font-size: 0.70em;
-    padding-left: 0px;
-
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 0;
 }
 
 .breadcrumb > li > a,
@@ -260,9 +327,10 @@ hr {
 }
 
 .breadcrumb > li + li:before {
-    padding: 0 5px;
+    padding: 0 10px;
     color: #ccc;
-    content: "\00a0\00a0\003e\00a0\00a0";
+    font-family: FontAwesome;
+    content: "\f054";
 }
 
 /* Carousel */
@@ -373,6 +441,7 @@ hr {
 
 .movie-list {
     margin-top: 25px;
+    display: inline;
 }
 
 .age-rating {
@@ -588,6 +657,7 @@ footer li.signup-link a:hover {
 .film {
     margin: 25px 0;
     height: 500px;
+    display: inline;
 }
 
 .film-content > h4 {
@@ -616,6 +686,16 @@ footer li.signup-link a:hover {
 
 .remove-padding {
     padding: 0 !important;
+}
+
+.remove-vertical-padding {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.remove-horizontal-padding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 .no-pad-right {
@@ -988,13 +1068,13 @@ section#joinMailingList {
 }
 
 
-/*footer*/
-.brgold-undrl {
+/* Footer */
+.gold-url {
     color: rgb(189, 159, 95);
     text-decoration: underline;
 }
 
-.footer-desc {
+.footer-description {
     color: rgb(170, 170, 170);
     font-size: 0.75em;
 }
