@@ -467,6 +467,19 @@ div > .btn + .btn {
     font-size: 0.75em;
 }
 
+.movie-btn:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background: #fff;
+    transform: translate(-50%, 100%);
+}
+
+
 .movie-time {
     text-align: center;
     border: solid 1px rgb(170, 170, 170);
