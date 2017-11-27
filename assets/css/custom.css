@@ -3,11 +3,62 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/Gotham-Light.eot');
+    src: url('../fonts/gotham/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham/Gotham-Light.woff') format('woff'),
+    url('../fonts/gotham/Gotham-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    src: url('../fonts/gotham/Gotham-Black.eot');
+    src: url('../fonts/gotham/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham/Gotham-Black.woff') format('woff'),
+    url('../fonts/gotham/Gotham-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/gotham/Gotham-Book.eot');
+    src: url('../fonts/gotham/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham/Gotham-Book.woff') format('woff'),
+    url('../fonts/gotham/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../fonts/gotham/Gotham-Medium.eot');
+    src: url('../fonts/gotham/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham/Gotham-Medium.woff') format('woff'),
+    url('../fonts/gotham/Gotham-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('../fonts/gotham/Gotham-Bold.eot');
+    src: url('../fonts/gotham/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham/Gotham-Bold.woff') format('woff'),
+    url('../fonts/gotham/Gotham-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* General*/
 
 body {
     /*font-family: Gotham, 'proxima-nova', 'Raleway', Helvetica, sans-serif;*/
-    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'Gotham', sans-serif;
     font-size: 15px;
     background: rgb(0, 0, 0);
     color: #fff;
@@ -16,6 +67,15 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
+
+.row{
+    overflow: hidden;
+}
+
+/*[class*="col-"]{*/
+    /*margin-bottom: -99999px;*/
+    /*padding-bottom: 99999px;*/
+/*}*/
 
 hr {
     margin: 10px 0;
@@ -459,7 +519,14 @@ div > .btn + .btn {
 .movie-list {
     margin-top: 25px;
     display: inline;
+    min-height: 200px;
 }
+
+/*.movie-list, .movie-list > div {*/
+    /*display: flex;*/
+    /*border: 1px solid #ccc;*/
+    /*height: 100%;*/
+/*}*/
 
 .age-rating {
     float: right;
@@ -467,7 +534,11 @@ div > .btn + .btn {
     font-size: 0.75em;
 }
 
-.movie-btn:after
+.movie-btn {
+    height: inherit;
+}
+
+.buy-btn:after
 {
     content: '';
     position: absolute;
