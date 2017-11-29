@@ -72,10 +72,14 @@ body {
     overflow: hidden;
 }
 
-/*[class*="col-"]{*/
-    /*margin-bottom: -99999px;*/
-    /*padding-bottom: 99999px;*/
-/*}*/
+h5 {
+    font-family: 'Gotham Bold', sans-serif;
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}
 
 hr {
     margin: 10px 0;
@@ -519,43 +523,17 @@ div > .btn + .btn {
 .movie-list {
     margin-top: 25px;
     display: inline;
-    min-height: 200px;
-}
-
-/*.movie-list, .movie-list > div {*/
-    /*display: flex;*/
-    /*border: 1px solid #ccc;*/
-    /*height: 100%;*/
-/*}*/
-
-.age-rating {
-    float: right;
-    color: #777;
-    font-size: 0.75em;
 }
 
 .movie-btn {
-    height: inherit;
+    overflow: hidden;
 }
-
-.buy-btn:after
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    height: 100%;
-    width: 2px;
-    background: #fff;
-    transform: translate(-50%, 100%);
-}
-
 
 .movie-time {
     text-align: center;
     border: solid 1px rgb(170, 170, 170);
     padding: 13px 0 11px;
-    margin: 10px 0;
+    /*margin: 10px 0;*/
     /*font-size: 0.8em*/
 }
 
@@ -565,6 +543,26 @@ div > .btn + .btn {
     color: #fff;
     background-color: rgb(189, 159, 95);
     padding: 12px 0 10px;
+}
+
+.time-line:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    background: #fff;
+    z-index: -3;
+}
+
+.age-rating {
+    float: right;
+    color: #777;
+    font-size: 0.75em;
+}
+
+.movie-content {
+    padding-bottom: 20px;
 }
 
 
@@ -732,7 +730,7 @@ footer {
     background: #3e4249;
     color: white;
     padding: 20px 0 10px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 footer p {
@@ -1148,6 +1146,36 @@ section#joinMailingList {
     background: rgba(0, 0, 0, 0.5);
 }
 
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: 1;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+    right: 0;
+    z-index: 2;
+}
+
+.slick-next:before {
+    font-family: FontAwesome, 'Raleway', sans-serif ;
+    content: "\f138";
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 2;
+}
+
+.slick-prev:before {
+    font-family: FontAwesome, 'Raleway', sans-serif ;
+    content: "\f137";
+}
+
 .movie-description {
     font-size: 1em;
     line-height: 130%;
@@ -1177,12 +1205,14 @@ section#joinMailingList {
 
 .footer-description {
     color: rgb(170, 170, 170);
-    font-size: 0.75em;
+    font-size: 1em;
+    line-height: 20px;
 }
 
 .footer-address {
     color: rgb(170, 170, 170);
-    font-size: 0.8em;
+    font-size: 1em;
+    line-height: 20px;
 }
 
 .social-media-btn {

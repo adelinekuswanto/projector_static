@@ -153,14 +153,14 @@
 
             <hr/>
 
-            <div class="row movie-list">
+            <div class="movie-list" style="margin-top: 25px;">
 
                 <div class="col-xs-4 col-md-2 movie-btn box">
                     <div class="movie-time"> 10.00 AM </div>
-                    <div class=""> <a href="#" class="btn buy-btn" target="_blank">BUY</a> </div>
+                    <div class=""> <a href="#" class="btn buy-btn time-line" target="_blank">BUY</a> </div>
                 </div>
 
-                <div class="col-xs-8 col-md-10 box">
+                <div class="col-xs-8 col-md-10 box movie-content">
                     <div class="col-xs-12 col-md-4">
                         <img class="img-responsive" src="assets/img/images_for_website/MoviePosters/misshokusai_a.jpg">
                     </div>
@@ -181,14 +181,14 @@
 
             </div>
 
-            <div class="row movie-list">
+            <div class="movie-list">
 
                 <div class="col-xs-4 col-md-2 movie-btn box" style="height: inherit">
                     <div class="movie-time" style=""> 11.00 AM </div>
-                    <div class=""> <a href="#" class="btn buy-btn" target="_blank">BUY</a> </div>
+                    <div class=""> <a href="#" class="btn buy-btn time-line" target="_blank">BUY</a> </div>
                 </div>
 
-                <div class="col-xs-8 col-md-10 box">
+                <div class="col-xs-8 col-md-10 box movie-content">
                     <div class="col-xs-12 col-md-4 ">
                         <img class="img-responsive" src="assets/img/images_for_website/movieposters/kimi-no-na-wa.jpg">
                     </div>
@@ -207,11 +207,9 @@
                     </div>
                 </div>
 
-
-
             </div>
-
-            <div class="row">
+            <div class="clearfix"></div>
+            <div class="movie-list">
                 <br>
                 <br>
                 <div class="col-sm-12 text-center">
@@ -220,7 +218,6 @@
                         <i class="fa fa-circle-thin fa-stack-2x"></i>
                         <i class="fa fa-arrow-down fa-stack-1x"></i>
                     </span>
-
                 </div>
                 <div class="clearfix"></div>
                 <br>
@@ -525,7 +522,7 @@
     </section>
 
     <!-- Footer -->
-    <section id="footer1" style="">
+    <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
@@ -649,6 +646,8 @@
             });
 
             $('.box').matchHeight();
+
+            $( ".buy-btn:last" ).removeClass( "time-line" );
 
         });
 
