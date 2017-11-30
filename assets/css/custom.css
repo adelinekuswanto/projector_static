@@ -62,8 +62,8 @@ body {
     font-size: 15px;
     background: rgb(0, 0, 0);
     color: #fff;
-    margin-bottom: 100px;
-    line-height: 15px;
+    /*margin-bottom: 100px;*/
+    line-height: 20px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -81,12 +81,28 @@ p {
     font-size: 15px;
 }
 
+hr:before,
+hr:after {
+    content: "";
+    display: table;
+}
+
+hr:after {
+    clear: both;
+}
+
 hr {
-    margin: 10px 0;
-    border-top: 1px solid rgb(120, 120, 120);
+    margin: 25px 0;
+    border: 1px solid rgb(120, 120, 120);
 }
 
 /* Buttons */
+
+button {
+    background-color: black;
+    border: 0;
+    font-size: inherit;
+}
 
 .btn {
     font-weight: bold;
@@ -423,9 +439,9 @@ div > .btn + .btn {
 }
 
 .carousel-inner > .item > img {
-    overflow: hidden;
-    width: 150% !important;
-    margin-top: -25px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .carousel-caption {
@@ -563,6 +579,10 @@ div > .btn + .btn {
 
 .movie-content {
     padding-bottom: 20px;
+}
+
+.movie-content > div {
+    padding: 0 20px;
 }
 
 
@@ -755,8 +775,17 @@ footer li.signup-link a:hover {
 
 .film {
     margin: 25px 0;
-    height: 500px;
+    /*padding: 30px;*/
+    min-height: 500px;
     display: inline;
+}
+
+.film:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 .film-content > h4 {
@@ -1073,6 +1102,20 @@ textarea {
     #hero {
         min-height: 250px;
     }
+
+    .featured-event {
+        margin: 25px 0;
+        height: auto;
+    }
+
+    section#footer > * {
+        text-align: center;
+    }
+
+    section#footer > .container > .row > div {
+        margin-top: 25px;
+    }
+
 }
 
 @media screen and ( max-width: 568px ) {
@@ -1185,7 +1228,13 @@ section#joinMailingList {
     margin-bottom: 10px;
 }
 
-.slick-current.slick-center, .slide-content {
+.slide-content {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+}
+
+.slick-current.slick-center, .slick-current.slick-center > .slide-content {
     -webkit-opacity: 1;
     -moz-opacity: 1;
     opacity: 1;
