@@ -115,46 +115,52 @@
     <section id="movie-timeslot">
 
         <div class="container">
-            <div class="row">
 
-                <div class="col-xs-3 col-sm-3 text-center">
-                    <div>
-                        <span class="fa-stack">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-angle-left fa-stack-1x"></i>
-                        </span>
-                        <small>PREVIOUS DAY</small>
+            <div class="">
+
+                <div class="calendar-bar">
+
+                    <div class="col-xs-2 col-sm-2 text-left remove-horizontal-padding">
+                        <div class="col-xs-5 remove-horizontal-padding">
+                            <button>
+                                <img class="img-responsive" src="assets/img/icons/arrow-left-small.svg" style="height: 24px;">
+                            </button>
+                        </div>
+                        <div class="col-xs-7 remove-horizontal-padding">PREVIOUS DAY</div>
                     </div>
-                </div>
 
-                <div class="col-xs-6 col-sm-6 text-center">
-                    <div class="calendar-input-group">
-                        <button class="" id="calendar" type="text" name="date" title="Select Date" style="" value="" aria-describedby="calendar-addon"></button>
-                        <span class="" id="calendar-addon">
-                            <span class="fa-stack">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <i class="fa fa-calendar fa-stack-1x"></i>
+                    <div class="col-xs-8 col-sm-8 text-center remove-horizontal-padding ">
+                        <div class="calendar-input-group">
+                            <button class="" id="calendar" type="text" name="date" title="Select Date" style="" value="" aria-describedby="calendar-addon"></button>
+                            <span class="" id="calendar-addon">
+                                <!--<span class="fa-stack">-->
+                                    <!--<i class="fa fa-circle-thin fa-stack-2x"></i>-->
+                                    <!--<i class="fa fa-calendar fa-stack-1x"></i>-->
+                                <!--</span>-->
+                                <img class="img-responsive" src="assets/img/icons/calendar.svg" style="height: 30px;">
                             </span>
-                        </span>
+                        </div>
                     </div>
+
+                    <div class="col-xs-2 col-sm-2 text-right remove-horizontal-padding">
+                        <div class="col-xs-7 remove-horizontal-padding">NEXT DAY</div>
+                        <div class="col-xs-5 remove-horizontal-padding">
+                            <button>
+                                <img class="img-responsive" src="assets/img/icons/arrow-right-small.svg" style="height: 24px;">
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col-xs-3 col-sm-3 text-center">
-                    <div>
-                        <small>NEXT DAY</small>
-                        <span class="fa-stack">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-angle-right fa-stack-1x"></i>
-                        </span>
-                    </div>
-                </div>
             </div>
+        </div>
 
             <div class="clearfix"></div>
+            <div class="container"> <hr> </div>
 
-            <hr/>
-
-            <div class="movie-list" style="margin-top: 25px;">
+        <div class="container">
+            <div class="movie-list">
 
                 <div class="col-xs-4 col-md-2 movie-btn box">
                     <div class="movie-time"> 10.00 AM </div>
@@ -210,60 +216,19 @@
 
             </div>
 
-
-            <!--<div class="movie-list hidden">-->
-
-                <!--<div class="col-xs-4 col-md-2 movie-btn box">-->
-                    <!--<div class="movie-time" style=""> 11.00 AM </div>-->
-                    <!--<div class=""> <a href="#" class="btn buy-btn time-line" target="_blank">BUY</a> </div>-->
-                <!--</div>-->
-
-                <!--<div class="col-xs-8 col-md-10 box movie-content">-->
-                    <!--<div class="col-xs-12 col-md-4 ">-->
-                        <!--<img class="img-responsive" src="assets/img/images_for_website/movieposters/kimi-no-na-wa.jpg">-->
-                    <!--</div>-->
-
-                    <!--<div class="col-xs-12 col-md-8 ">-->
-                        <!--<h4>Stars Overload <small class="pull-right">PG 13</small></h4>-->
-                        <!--<p class="mov-desc">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-xs-12 col-md-4">-->
-                                <!--<a href="#" target="_blank" class="btn btn-default btn-block">MORE</a>-->
-                            <!--</div>-->
-                            <!--<div class="col-xs-12 col-md-4">-->
-                                <!--<a href="#" target="_blank" class="btn btn-primary btn-block">TRAILER</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-            <!--</div>-->
-
-            <div class="clearfix"></div>
             <div class="movie-list">
-                <br>
-                <br>
-                <div class="col-sm-12 text-center">
-                    <button class="">
-                    <h6 class="">SHOW MORE</h6>
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-arrow-down fa-stack-1x"></i>
-                    </span>
+                <div class="col-sm-12 text-center" style="margin-bottom: 25px;">
+                    <h6>SHOW MORE</h6>
+                    <button>
+                        <img class="img-responsive" src="assets/img/icons/arrow-down.svg" style="height: 45px;">
                     </button>
                 </div>
-                <div class="clearfix"></div>
-                <br>
-                <br>
+
                 <div class="col-sm-4 col-sm-offset-4">
-                    <a href="" class="btn btn-primary btn-block">SEE FULL CALENDAR <i class="fa fa-chevron-right"></i></a>
+                    <a href="#" class="btn btn-primary btn-block">SEE FULL CALENDAR ></a>
                 </div>
-                <div class="clearfix"></div>
             </div>
 
-            <br>
-            <br>
-            <br>
         </div>
     </section>
 
@@ -596,10 +561,12 @@
             <div class="container"> <hr> </div>
 
             <div class="" style="padding: 10px 0">
-                <div class="col-sm-4 text-center" style="margin-bottom: 20px;">
-                    <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <div class="col-sm-4 text-center" style="margin-bottom: 20px; font-size: ">
+                    <a class="social-media-btn" href="/" data-eventid="abc" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                     <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-sm-2 text-center">
                     <a class="footer-description text-center">CONTACT US</a>

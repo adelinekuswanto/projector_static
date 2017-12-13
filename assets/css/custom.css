@@ -56,14 +56,11 @@
 /* General*/
 
 body {
-    /*font-family: Gotham, 'proxima-nova', 'Raleway', Helvetica, sans-serif;*/
-    /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Gotham', sans-serif;
     font-size: 15px;
     background: rgb(0, 0, 0);
     color: #fff;
-    /*margin-bottom: 100px;*/
-    line-height: 20px;
+    line-height: 1.5em;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -73,6 +70,11 @@ body {
 }
 
 h5 {
+    font-family: 'Gotham Bold', sans-serif;
+    font-size: 15px;
+}
+
+h6 {
     font-family: 'Gotham Bold', sans-serif;
     font-size: 15px;
 }
@@ -122,6 +124,18 @@ button {
 .btn-default {
     background: #fff;
     color: black;
+}
+
+.btn-block {
+    padding: 12px 0 10px;
+}
+
+.btn-gold,
+.btn-gold:focus,
+.btn-gold:hover {
+    background: rgb(189, 159, 95);
+    border-color: rgb(189, 159, 95);
+    color: #fff;
 }
 
 .btn-default:focus,
@@ -199,9 +213,9 @@ button {
 }
 
 .navbar a {
+    font-family: 'Gotham Book', sans-serif;
     color: rgb(170, 170, 170);
-    font-weight: 700;
-    font-size: 1.2em;
+    font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-top: 0;
@@ -214,7 +228,7 @@ button {
 .navbar a.active {
     color: rgb(189, 159, 95);
     font-family: 'Gotham Bold', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .nav > li > a:focus,
@@ -224,8 +238,8 @@ button {
 }
 
 .navbar .navbar-title a {
-    font-size: 1.5em;
-    font-weight: 900;
+    font-family: 'Gotham Bold', sans-serif;
+    font-size: 1.1em;
     color: #fff;
     border-right: solid 1px rgb(120, 120, 120);
     border-left: solid 1px rgb(120, 120, 120);
@@ -557,7 +571,12 @@ div > .btn + .btn {
 
 .movie-list {
     margin-top: 25px;
-    display: inline;
+    display: block;
+}
+
+small {
+    font-family: "Gotham", sans-serif;
+    color: #fff !important;
 }
 
 .movie-btn {
@@ -597,7 +616,12 @@ div > .btn + .btn {
 }
 
 .movie-content {
-    padding-bottom: 20px;
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+.movie-content > div > h4{
+    margin-top: 0;
 }
 
 .movie-content > div {
@@ -819,7 +843,7 @@ footer li.signup-link a:hover {
 .featured-event > img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /*.container {*/
@@ -1047,11 +1071,11 @@ label {
 }
 
 input[type="text"],
+input[type="number"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
-input[type="submit"],
 textarea {
     color: #fff;
     border: 1px solid #ccc;
@@ -1062,16 +1086,43 @@ textarea {
     margin: 15px 0;
     text-align: center;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-family: 'Gotham Medium', sans-serif;
     font-size: 0.8em;
+    height: 46px;
     text-transform: uppercase;
 }
 
-.form-control {
+input[type="submit"],
+button[type="submit"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    margin: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Gotham bold', sans-serif;
+    font-size: 0.8em;
+    height: 46px;
+    text-transform: uppercase;
+}
+
+.control-label {
+    color: #fff;
+    padding: 6px 12px;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.form-control,
+.input-group-addon {
     border-radius: 0;
     background: transparent;
     border-color: rgb(120, 120, 120);
     color: #fff;
+    /*height: 45px;*/
 }
 
 .form-control:focus,
@@ -1171,8 +1222,8 @@ section#joinMailingList {
 /* Slick Slider */
 
 .slick-slide {
-    height: 300px !important;
-    width: 250px !important;
+    height: 600px !important;
+    width: 400px !important;
 }
 
 .slick-slide:focus {
@@ -1190,9 +1241,9 @@ section#joinMailingList {
 }
 
 .slide-image {
-    -webkit-opacity: 0.7;
-    -moz-opacity: 0.7;
-    opacity: 0.7;
+    -webkit-opacity: 0.6;
+    -moz-opacity: 0.6;
+    opacity: 0.6;
     height: 100%;
     width: 100%;
     object-fit: cover
@@ -1277,12 +1328,18 @@ section#joinMailingList {
 }
 
 .footer-description {
+    font-family: 'Gotham Book', sans-serif;
     color: rgb(170, 170, 170);
     font-size: 1em;
     line-height: 20px;
 }
 
+.footer-description > a {
+    font-family: 'Gotham Bold', sans-serif;
+}
+
 .footer-address {
+    font-family: 'Gotham Book', sans-serif;
     color: rgb(170, 170, 170);
     font-size: 1em;
     line-height: 20px;
@@ -1291,6 +1348,7 @@ section#joinMailingList {
 .social-media-btn {
     color: #fff !important;
     padding: 0 10px;
+    font-size: 18px;
 }
 
 /*pickadate*/
