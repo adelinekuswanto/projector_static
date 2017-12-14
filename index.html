@@ -38,12 +38,6 @@
     <header class="site-banner hidden-xs" role="banner">
 
         <div id="carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-            </ol>
-
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
 
@@ -51,7 +45,7 @@
                     <img src="assets/img/moviePosters/moonlight-movie.jpg">
                     <div class="carousel-caption">
                         <h3>MOONLIGHT</h3>
-                        <p class="carousel-caption-p">The long-awaited Oscar Best Picture winner finally comes to our screen.</p>
+                        <p>The long-awaited Oscar Best Picture winner finally comes to our screen.</p>
                     </div>
                 </div>
 
@@ -59,7 +53,7 @@
                     <img src="assets/img/moviePosters/MANHATTAN-BRIAN-HAMILL.jpg" >
                     <div class="carousel-caption">
                         <h3>Caption Text</h3>
-                        <p class="carousel-caption-p">The long-awaited Oscar Best Picture winner finally comes to our screen.</p>
+                        <p>The long-awaited Oscar Best Picture winner finally comes to our screen.</p>
                     </div>
                 </div>
 
@@ -67,10 +61,12 @@
 
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                <i class="fa fa-angle-left " aria-hidden="true" style="font-size:50px; font-weight:100"></i>
+                <!--<i class="fa fa-angle-left " aria-hidden="true" style="font-size:50px; font-weight:100"></i>-->
+                <img class="" src="assets/img/icons/arrow-left-header.svg" style="height: 80px;">
             </a>
             <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                <i class="fa fa-angle-right " aria-hidden="true" style="font-size:50px; font-weight:100"></i>
+                <!--<i class="fa fa-angle-right " aria-hidden="true" style="font-size:50px; font-weight:100"></i>-->
+                <img class="" src="assets/img/icons/arrow-right-header.svg" style="height: 80px;">
             </a>
         </div>
 
@@ -79,7 +75,7 @@
     <div class="clearfix"></div>
 
     <nav class="navbar">
-        <div class="container-fluid">
+        <div class="container">
 
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -88,16 +84,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand visible-sm visible-xs" href="#">THE PROJECTOR</a>
+                <a class="navbar-brand visible-sm visible-xs" href="index.html">THE PROJECTOR</a>
             </div>
 
             <div class="navbar-collapse collapse">
                 <div class="col-md-12">
-                    <ul class="nav navbar-nav ">
+                    <ul class="nav navbar-nav nav-justified">
                         <li class=""><a href="films.html"> films + </a></li>
                         <li><a href="events.html"> events + </a></li>
-                        <li><a href=""> stuff </a></li>
-                        <!--<li class="navbar-title"> <a href=""><img width="150px" src="assets/img/images_for_website/Logo/logo-header.png"></a> </li>-->
+                        <li><a href="stuff.html"> stuff + </a></li>
                         <li class="navbar-title hidden-xs hidden-sm"> <a href=""> the projector </a> </li>
                         <li><a href=""> cafe bar </a></li>
                         <li><a href=""> hire </a></li>
@@ -120,31 +115,29 @@
 
                 <div class="calendar-bar">
 
-                    <div class="col-xs-2 col-sm-2 text-left remove-horizontal-padding">
-                        <div class="col-xs-5 remove-horizontal-padding">
+                    <div class="col-xs-3 col-sm-3 text-left remove-horizontal-padding">
+                        <div class="col-xs-3 remove-horizontal-padding">
                             <button>
                                 <img class="img-responsive" src="assets/img/icons/arrow-left-small.svg" style="height: 24px;">
                             </button>
                         </div>
-                        <div class="col-xs-7 remove-horizontal-padding">PREVIOUS DAY</div>
+                        <div class="col-xs-9 remove-horizontal-padding text-left" style="line-height: 30px;">PREVIOUS DAY</div>
                     </div>
 
-                    <div class="col-xs-8 col-sm-8 text-center remove-horizontal-padding ">
-                        <div class="calendar-input-group">
-                            <button class="" id="calendar" type="text" name="date" title="Select Date" style="" value="" aria-describedby="calendar-addon"></button>
-                            <span class="" id="calendar-addon">
-                                <!--<span class="fa-stack">-->
-                                    <!--<i class="fa fa-circle-thin fa-stack-2x"></i>-->
-                                    <!--<i class="fa fa-calendar fa-stack-1x"></i>-->
-                                <!--</span>-->
+                    <div class="col-xs-6 col-sm-6 text-center remove-horizontal-padding">
+                        <div class="col-xs-9 col-sm-8 remove-horizontal-padding calendar-input-group text-right">
+                            <button class="" id="calendar" type="text" name="date" title="Select Date" style="" value=""></button>
+                        </div>
+                        <div class="col-xs-3 col-sm-4 remove-horizontal-padding text-left">
+                            <button class="" id="calendar2" type="text" name="date" title="Select Date" style="" value="">
                                 <img class="img-responsive" src="assets/img/icons/calendar.svg" style="height: 30px;">
-                            </span>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="col-xs-2 col-sm-2 text-right remove-horizontal-padding">
-                        <div class="col-xs-7 remove-horizontal-padding">NEXT DAY</div>
-                        <div class="col-xs-5 remove-horizontal-padding">
+                    <div class="col-xs-3 col-sm-3 text-right remove-horizontal-padding">
+                        <div class="col-xs-9 remove-horizontal-padding text-right" style="line-height: 30px;">NEXT DAY</div>
+                        <div class="col-xs-3 remove-horizontal-padding">
                             <button>
                                 <img class="img-responsive" src="assets/img/icons/arrow-right-small.svg" style="height: 24px;">
                             </button>
@@ -168,7 +161,7 @@
                 </div>
 
                 <div class="col-xs-8 col-md-10 box movie-content">
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12 col-md-4 movie-poster">
                         <img class="img-responsive" src="assets/img/moviePosters/misshokusai_a.jpg">
                     </div>
 
@@ -196,7 +189,7 @@
                 </div>
 
                 <div class="col-xs-8 col-md-10 box movie-content">
-                    <div class="col-xs-12 col-md-4 ">
+                    <div class="col-xs-12 col-md-4 movie-poster">
                         <img class="img-responsive" src="assets/img/moviePosters/kimi-no-na-wa.jpg">
                     </div>
 
@@ -216,16 +209,16 @@
 
             </div>
 
-            <div class="movie-list">
-                <div class="col-sm-12 text-center" style="margin-bottom: 25px;">
+            <div class="movie-show-more">
+                <div class="col-sm-12 text-center">
                     <h6>SHOW MORE</h6>
                     <button>
                         <img class="img-responsive" src="assets/img/icons/arrow-down.svg" style="height: 45px;">
                     </button>
                 </div>
 
-                <div class="col-sm-4 col-sm-offset-4">
-                    <a href="#" class="btn btn-primary btn-block">SEE FULL CALENDAR ></a>
+                <div class="col-sm-12 text-center">
+                    <a href="#" class="btn btn-primary">SEE FULL CALENDAR ></a>
                 </div>
             </div>
 
@@ -244,57 +237,81 @@
                 </div>
             </div>
 
-            <div class="col-sm-12">
+            <div class="col-sm-12 remove-horizontal-padding film-list">
 
                 <div class="col-sm-4 film">
-                    <div>
+                    <div class="film-poster">
                         <img class="img-responsive" src="assets/img/moviePosters/kimi-no-na-wa.jpg">
                     </div>
-                    <br>
+
                     <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Stars Overload</span> <small class="col-sm-3 text-right">PG 13</small></h4>
+                        <h4>
+                            <span class="col-sm-9 remove-padding">Stars Overload</span>
+                            <small class="col-sm-3 text-right">PG 13</small>
+                        </h4>
                         <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
+                        <p class="film-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-default btn-block">MORE</a>
+                                </div>
+
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-primary btn-block">TRAILER</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-4 film">
-                    <div>
+                    <div class="film-poster">
                         <img class="img-responsive" src="assets/img/moviePosters/misshokusai_a.jpg">
                     </div>
-                    <br>
+
                     <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Painting Dragons</span> <small class="col-sm-3 text-right">PG 13</small></h4>
+                        <h4>
+                            <span class="col-sm-9 remove-padding">Painting Dragons</span>
+                            <small class="col-sm-3 text-right">PG 13</small>
+                        </h4>
                         <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
+                        <p class="film-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-default btn-block">MORE</a>
+                                </div>
+
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-primary btn-block">TRAILER</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-4 film">
-                    <div>
+                    <div class="film-poster">
                         <img class="img-responsive" src="assets/img/moviePosters/methode-times-prod.jpg">
                     </div>
-                    <br>
+
                     <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Brand New Suit Orange is My Color</span> <small class="col-sm-3 text-right">PG 13</small></h4>
+                        <h4>
+                            <span class="col-sm-9 remove-padding">Brand New Suit Orange is My Color</span>
+                            <small class="col-sm-3 text-right">PG 13</small>
+                        </h4>
                         <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
+                        <p class="film-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-default btn-block">MORE</a>
+                                </div>
+
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-primary btn-block">TRAILER</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -303,36 +320,52 @@
                 <div class="clearfix"></div>
 
                 <div class="col-sm-4 film">
-                    <div class="">
+                    <div class="film-poster">
                         <img class="img-responsive" src="assets/img/moviePosters/methode-times-prod.jpg">
                     </div>
-                    <br>
+
                     <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Brand New Suit</span> <small class="col-sm-3 text-right">PG 13</small></h4>
+                        <h4>
+                            <span class="col-sm-9 remove-padding">Brand New Suit</span>
+                            <small class="col-sm-3 text-right">PG 13</small>
+                        </h4>
                         <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
+                        <p class="film-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-default btn-block">MORE</a>
+                                </div>
+
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-primary btn-block">TRAILER</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-4 film">
-                    <div>
+                    <div class="film-poster">
                         <img class="img-responsive" src="assets/img/moviePosters/kimi-no-na-wa.jpg">
                     </div>
-                    <br>
+
                     <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Stars Overload</span> <small class="col-sm-3 text-right">PG 13</small></h4>
+                        <h4>
+                            <span class="col-sm-9 remove-padding">Stars Overload</span>
+                            <small class="col-sm-3 text-right">PG 13</small>
+                        </h4>
                         <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
+                        <p class="film-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-default btn-block">MORE</a>
+                                </div>
+
+                                <div class=" col-sm-6">
+                                    <a href="" class="btn btn-primary btn-block">TRAILER</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -341,19 +374,17 @@
             </div>
 
             <div class="clearfix"></div>
-            <div class="row" style="margin-top: 25px;">
+            <div class="movie-show-more">
                 <div class="col-sm-12 text-center">
-                    <a href="" class="btn btn-primary">SEE FULL LIST OF MOVIES <i class="fa fa-chevron-right"></i></a>
+                    <a href="#" class="btn btn-primary">SEE FULL LIST OF MOVIES ></a>
                 </div>
             </div>
-            <br>
-            <br>
+
         </div>
     </section>
 
     <div class="clearfix"></div>
     <div class="container"> <hr> </div>
-
 
     <!-- COMING SOON SECTION -->
     <section>
@@ -372,15 +403,23 @@
                         <div class="slick-slide">
                             <img class="slide-image" src="assets/img/moviePosters/wizard-oz.jpg">
                             <div class="slide-content">
-                                <h4>Wiz wiz <small class="pull-right">PG 13</small></h4>
-                                <hr>
-                                <p class="movie-description">
-                                    Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien.
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <a href="" class="btn btn-default">MORE</a>
-                                        <a href="" class="btn btn-dark" >TRAILER</a>
+                                <div class="film-content">
+                                    <h4>
+                                        <span class="col-sm-9 remove-padding">Titled Night Of The Day Of The Dawn Of The Son Of The Bride Of The Return Of The Revenge Of The Terror Of The Attack Of The Evil, Mutant, Hellbound, Flesh-Eating, Crawling, Alien, Zombified, Subhumanoid Living Dead — Part 5</span>
+                                        <small class="col-sm-3 text-right">PG 13</small>
+                                    </h4>
+                                    <hr>
+                                    <p class="film-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <div class=" col-sm-6">
+                                                <a href="" class="btn btn-default btn-block">MORE</a>
+                                            </div>
+
+                                            <div class=" col-sm-6">
+                                                <a href="" class="btn btn-primary btn-block">TRAILER</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -389,15 +428,23 @@
                         <div class="slick-slide">
                             <img class="slide-image" src="assets/img/moviePosters/moonlight-movie.jpg">
                             <div class="slide-content">
-                                <h4>Random Guy <small class="pull-right">PG 13</small></h4>
-                                <hr>
-                                <p class="movie-description">
-                                    Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu.
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <a href="" class="btn btn-default">MORE</a>
-                                        <a href="" class="btn btn-dark" >TRAILER</a>
+                                <div class="film-content">
+                                    <h4>
+                                        <span class="col-sm-9 remove-padding">Moon Light</span>
+                                        <small class="col-sm-3 text-right">PG 13</small>
+                                    </h4>
+                                    <hr>
+                                    <p class="film-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <div class=" col-sm-6">
+                                                <a href="" class="btn btn-default btn-block">MORE</a>
+                                            </div>
+
+                                            <div class=" col-sm-6">
+                                                <a href="" class="btn btn-primary btn-block">TRAILER</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -406,15 +453,23 @@
                         <div class="slick-slide">
                             <img class="slide-image" src="assets/img/moviePosters/Miss-Saigon.jpg">
                             <div class="slide-content">
-                                <h4>Stars Overload <small class="pull-right">PG 13</small></h4>
-                                <hr>
-                                <p class="movie-description">
-                                    Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu.
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <a href="" class="btn btn-default">MORE</a>
-                                        <a href="" class="btn btn-dark">TRAILER</a>
+                                <div class="film-content">
+                                    <h4>
+                                        <span class="col-sm-9 remove-padding">Stars Overload</span>
+                                        <small class="col-sm-3 text-right">PG 13</small>
+                                    </h4>
+                                    <hr>
+                                    <p class="film-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <div class=" col-sm-6">
+                                                <a href="" class="btn btn-default btn-block">MORE</a>
+                                            </div>
+
+                                            <div class=" col-sm-6">
+                                                <a href="" class="btn btn-primary btn-block">TRAILER</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -423,15 +478,23 @@
                         <div class="slick-slide">
                             <img class="slide-image" src="assets/img/moviePosters/01-jungle-book-baloo-mowgli.jpg">
                             <div class="slide-content">
-                                <h4>Stars Overload <small class="pull-right">PG 13</small></h4>
-                                <hr>
-                                <p class="movie-description">
-                                    Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu.
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <a href="" class="btn btn-default">more</a>
-                                        <a href="" class="btn btn-primary">trailer</a>
+                                <div class="film-content">
+                                    <h4>
+                                        <span class="col-sm-9 remove-padding">Jungle Book</span>
+                                        <small class="col-sm-3 text-right">PG 13</small>
+                                    </h4>
+                                    <hr>
+                                    <p class="film-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <div class=" col-sm-6">
+                                                <a href="" class="btn btn-default btn-block">MORE</a>
+                                            </div>
+
+                                            <div class=" col-sm-6">
+                                                <a href="" class="btn btn-primary btn-block">TRAILER</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -441,13 +504,11 @@
                 </div>    <!-- col -->
             </div> <!-- row -->
 
-            <div class="row">
+            <div class="movie-show-more">
                 <div class="col-sm-12 text-center">
-                    <a href="" class="btn btn-primary">see full list of movies <i class="fa fa-chevron-right"></i></a>
+                    <a href="#" class="btn btn-primary">see full list of movies ></a>
                 </div>
             </div>
-            <br>
-            <br>
         </div>
     </section>
 
@@ -458,25 +519,95 @@
     <section id="event">
         <div class="container">
 
-            <div class="section-header">
-                <h3>EVENT</h3>
+            <div class="row">
+                <div class="section-header">
+                    <h3>EVENT</h3>
+                </div>
             </div>
 
             <div class="row">
                 <div class="col-md-4 featured-event">
                     <img class="img-responsive" src="assets/img/events/1.jpg">
+
+                    <div class="featured-event-content">
+                        <div class="film-content text-center">
+                            <h4>
+                                <span class="col-sm-12 remove-padding">the singapore film festival</span>
+                            </h4>
+
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <a href="" class="btn btn-default btn-block">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-md-4 featured-event">
                     <img class="img-responsive" src="assets/img/events/2.jpg">
+
+                    <div class="featured-event-content">
+                        <div class="film-content text-center">
+                            <h4>
+                                <span class="col-sm-12 remove-padding">scream queen filmfest tokyo in singapore</span>
+                            </h4>
+
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <a href="" class="btn btn-default btn-block">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-md-4 featured-event">
                     <img class="img-responsive" src="assets/img/events/3.jpg">
+
+                    <div class="featured-event-content">
+                        <div class="film-content text-center">
+                            <h4>
+                                <span class="col-sm-12 remove-padding">the projector - the middle east institute</span>
+                            </h4>
+
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <a href="" class="btn btn-default btn-block">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-md-4 featured-event">
                     <img class="img-responsive" src="assets/img/events/4.jpg">
+
+                    <div class="featured-event-content">
+                        <div class="film-content text-center">
+                            <h4>
+                                <span class="col-sm-12 remove-padding">swedish film festival</span>
+                            </h4>
+
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <a href="events.html" class="btn btn-default btn-block">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-md-4 featured-event">
@@ -488,13 +619,13 @@
                 </div>
 
             </div>
-            <div class="row">
+
+            <div class="movie-show-more">
                 <div class="col-sm-12 text-center">
-                    <a href="" class="btn btn-primary">SEE FULL LIST OF EVENTS <i class="fa fa-chevron-right"></i></a>
+                    <a href="#" class="btn btn-primary">see full list of events ></a>
                 </div>
             </div>
-            <br>
-            <br>
+
         </div>
     </section>
 
@@ -542,7 +673,7 @@
                         Previous clients to hire this unique space have included Google, Netflix, Silkair, Ikea, Guinness, Audemanrs Piguet, Universal Music, Expedia, Harley Davidson, StarHub, Edelman, Sony Playstation and many many more.
                         <br>
                         <br>
-                        Please e-mail <span class="gold-url">info+hire@theprojector.sg</span> where one of our team will respond to your request.
+                        Please e-mail <a href="#" class="gold-url">info+hire@theprojector.sg</a> where one of our team will respond to your request.
                     </p>
                 </div>
                 <div class="col-sm-4">
@@ -560,8 +691,8 @@
             <div class="clearfix"></div>
             <div class="container"> <hr> </div>
 
-            <div class="" style="padding: 10px 0">
-                <div class="col-sm-4 text-center" style="margin-bottom: 20px; font-size: ">
+            <div class="footer-social">
+                <div class="col-sm-4 text-center">
                     <a class="social-media-btn" href="/" data-eventid="abc" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                     <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -653,6 +784,14 @@
 
 
             $('#calendar').pickadate({
+                format: 'DAY | ddd, dd mmm',
+                onSet: function(context) {
+                    var date = new Date( context.select );
+                    $('#calendar').html( moment(date).format("[DAY] | ddd, DD MMM") );
+                }
+            });
+
+            $('#calendar2').pickadate({
                 format: 'DAY | ddd, dd mmm',
                 onSet: function(context) {
                     var date = new Date( context.select );
