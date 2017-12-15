@@ -34,643 +34,436 @@
     <![endif]-->
 </head>
 <body>
+<nav class="navbar">
+    <div class="container-fluid">
 
-    <header class="site-banner hidden-xs" role="banner">
-
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-
-                <div class="item active">
-                    <img src="assets/img/images_for_website/movieposters/moonlight-movie-reviews.jpg">
-                    <div class="carousel-caption">
-                        <h3>MOONLIGHT</h3>
-                        <p class="carousel-caption-p">The long-awaited Oscar Best Picture winner finally comes to our screen.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="assets/img/images_for_website/movieposters/o-MANHATTAN-BRIAN-HAMILL-facebook.jpg" >
-                    <div class="carousel-caption">
-                        <h3>Caption Text</h3>
-                        <p class="carousel-caption-p">The long-awaited Oscar Best Picture winner finally comes to our screen.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                <i class="fa fa-angle-left " aria-hidden="true" style="font-size:50px; font-weight:100"></i>
-            </a>
-            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                <i class="fa fa-angle-right " aria-hidden="true" style="font-size:50px; font-weight:100"></i>
-            </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand visible-sm visible-xs" href="#">THE PROJECTOR</a>
         </div>
 
-    </header>
-
-    <div class="clearfix"></div>
-
-    <nav class="navbar">
-        <div class="container-fluid">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand visible-sm visible-xs" href="#">THE PROJECTOR</a>
+        <div class="navbar-collapse collapse">
+            <div class="col-md-12">
+                <ul class="nav navbar-nav">
+                    <li><a href=""> films + </a></li>
+                    <li><a href=""> events + </a></li>
+                    <li><a href="" class="active"> stuff + </a></li>
+                    <!--<li class="navbar-title"> <a href=""><img width="150px" src="assets/img/images_for_website/Logo/logo-header.png"></a> </li>-->
+                    <li class="navbar-title hidden-xs hidden-sm"> <a href=""> the projector </a> </li>
+                    <li><a href=""> cafe bar </a></li>
+                    <li><a href="hire.html"> hire </a></li>
+                    <li><a href=""> about + </a></li>
+                </ul>
             </div>
-
-            <div class="navbar-collapse collapse">
-                <div class="col-md-12">
-                    <ul class="nav navbar-nav ">
-                        <li class=""><a href="films.html"> films + </a></li>
-                        <li><a href="events.html"> events + </a></li>
-                        <li><a href=""> stuff </a></li>
-                        <!--<li class="navbar-title"> <a href=""><img width="150px" src="assets/img/images_for_website/Logo/logo-header.png"></a> </li>-->
-                        <li class="navbar-title hidden-xs hidden-sm"> <a href=""> the projector </a> </li>
-                        <li><a href=""> cafe bar </a></li>
-                        <li><a href=""> hire </a></li>
-                        <li><a href=""> about + </a></li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
-    </nav>
 
-    <div class="clearfix"></div>
+    </div>
+</nav>
 
-    <!-- Movie | Time slot -->
-    <section id="movie-timeslot">
+<!-- Movie | Time Slot -->
+<div class="container">
 
-        <div class="container">
-            <div class="row">
-
-                <div class="col-xs-3 col-sm-3 text-center">
-                    <div>
-                        <span class="fa-stack">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-angle-left fa-stack-1x"></i>
-                        </span>
-                        <small>PREVIOUS DAY</small>
-                    </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 text-center">
-                    <div class="calendar-input-group">
-                        <button class="" id="calendar" type="text" name="date" title="Select Date" style="" value="" aria-describedby="calendar-addon"></button>
-                        <span class="" id="calendar-addon">
-                            <span class="fa-stack">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <i class="fa fa-calendar fa-stack-1x"></i>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="col-xs-3 col-sm-3 text-center">
-                    <div>
-                        <small>NEXT DAY</small>
-                        <span class="fa-stack">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-angle-right fa-stack-1x"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <hr/>
-
-            <div class="movie-list" style="margin-top: 25px;">
-
-                <div class="col-xs-4 col-md-2 movie-btn box">
-                    <div class="movie-time"> 10.00 AM </div>
-                    <div class=""> <a href="#" class="btn buy-btn time-line" target="_blank">BUY</a> </div>
-                </div>
-
-                <div class="col-xs-8 col-md-10 box movie-content">
-                    <div class="col-xs-12 col-md-4">
-                        <img class="img-responsive" src="assets/img/images_for_website/MoviePosters/misshokusai_a.jpg">
-                    </div>
-
-                    <div class="col-xs-12 col-md-8">
-                        <h4> Painting Dragons <small class="pull-right">PG 13</small> </h4>
-                        <p class="mov-desc">Morbi metus turpis, mollis quis blandit eget, placerat ut erat. In et placerat metus, at pharetra quam. Nullam accumsan, enim a tincidunt convallis, purus nulla molestie nulla, quis vulputate felis dolor sed metus.</p>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-4 ">
-                                <a href="" class="btn btn-default btn-block">MORE</a>
-                            </div>
-                            <div class="col-xs-12 col-md-4">
-                                <a href="" class="btn btn-primary btn-block">TRAILER</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="movie-list">
-
-                <div class="col-xs-4 col-md-2 movie-btn box" style="height: inherit">
-                    <div class="movie-time" style=""> 11.00 AM </div>
-                    <div class=""> <a href="#" class="btn buy-btn time-line" target="_blank">BUY</a> </div>
-                </div>
-
-                <div class="col-xs-8 col-md-10 box movie-content">
-                    <div class="col-xs-12 col-md-4 ">
-                        <img class="img-responsive" src="assets/img/images_for_website/movieposters/kimi-no-na-wa.jpg">
-                    </div>
-
-                    <div class="col-xs-12 col-md-8 ">
-                        <h4>Stars Overload <small class="pull-right">PG 13</small></h4>
-                        <p class="mov-desc">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-4">
-                                <a href="#" target="_blank" class="btn btn-default btn-block">MORE</a>
-                            </div>
-                            <div class="col-xs-12 col-md-4">
-                                <a href="#" target="_blank" class="btn btn-primary btn-block">TRAILER</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="clearfix"></div>
-            <div class="movie-list">
-                <br>
-                <br>
-                <div class="col-sm-12 text-center">
-                    <h6 class="sparse-text">SHOW MORE</h6>
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-arrow-down fa-stack-1x"></i>
-                    </span>
-                </div>
-                <div class="clearfix"></div>
-                <br>
-                <br>
-                <div class="col-sm-4 col-sm-offset-4">
-                    <a href="" class="btn btn-primary btn-block">SEE FULL CALENDAR <i class="fa fa-chevron-right"></i></a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-
-            <br>
-            <br>
-            <br>
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Hire</a></li>
+                <li class="active">Booking Form</li>
+            </ul>
         </div>
-    </section>
+    </div>
 
-    <div class="clearfix"></div>
-    <div class="container"> <hr> </div>
+    <div class="row">
+        <div class="col-sm-12 text-uppercase">
+            <strong>Hire</strong>
+        </div>
+        <div class="clearfix"></div>
+        <hr/>
+    </div>
+    <br>
 
-    <!-- NOW SHOWING SECTION -->
-    <section id="now-showing">
-        <div class="container">
-            <div class="row">
-                <div class="section-header">
-                    <h3>NOW SHOWING</h3>
-                </div>
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-group">
+
+                <li class="list-group-item">
+                        <span class="badge sidebar-badge">
+                            <i class="fa fa-chevron-circle-right fa-2x"></i>
+                        </span>
+                    <a href="#">REDRUM</a>
+                </li>
+
+                <li class="list-group-item">
+                        <span class="badge sidebar-badge">
+                            <i class="fa fa-chevron-circle-right fa-2x"></i>
+                        </span>
+                    <a href="#">GREEN ROOM</a>
+                </li>
+
+                <li class="list-group-item">
+                        <span class="badge sidebar-badge">
+                            <i class="fa fa-chevron-circle-right fa-2x"></i>
+                        </span>
+                    <a href="#">CAFE BAR</a>
+                </li>
+
+                <li class="list-group-item active">
+                        <span class="badge sidebar-badge">
+                            <i class="fa fa-chevron-circle-right fa-2x"></i>
+                        </span>
+                    <a href="#">BOOKING FORM</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-md-8">
+
+            <div class="col-sm-12">
+                <h4 class="text-uppercase page-title">Booking Form</h4>
+                <br>
             </div>
 
             <div class="col-sm-12">
 
-                <div class="col-sm-4 film">
-                    <div>
-                        <img class="img-responsive" src="assets/img/images_for_website/movieposters/kimi-no-na-wa.jpg">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="company_name" class="col-sm-3 control-label">Company Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="company_name" placeholder="Company Name">
+                        </div>
                     </div>
-                    <br>
-                    <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Stars Overload</span> <small class="col-sm-3 text-right">PG 13</small></h4>
-                        <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
+
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_person" class="col-sm-3 control-label">Contact Person</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="contact_person" placeholder="Contact Person">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_number" class="col-sm-3 control-label">Contact Number</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="contact_number" placeholder="Contact Number">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guest" class="col-sm-3 control-label">No. of Guest</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="guest" placeholder="No. of Guest">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event" class="col-sm-3 control-label" style="margin-top: 0">Nature of Event</label>
+                        <div class="col-sm-9">
+                            <div class="checkbox" id="event">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Public Event
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Private Booking
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Film Screening
+                                </label>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-sm-4 film">
-                    <div>
-                        <img class="img-responsive" src="assets/img/images_for_website/movieposters/misshokusai_a.jpg">
-                    </div>
-                    <br>
-                    <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Painting Dragons</span> <small class="col-sm-3 text-right">PG 13</small></h4>
-                        <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 film">
-                    <div>
-                        <img class="img-responsive" src="assets/img/images_for_website/movieposters/methode-times-prod-web-bin-47b59b1a-7054-11e6-acba-85f5c900fc1a.jpg">
-                    </div>
-                    <br>
-                    <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Brand New Suit Orange is My Color</span> <small class="col-sm-3 text-right">PG 13</small></h4>
-                        <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="clearfix"></div>
-
-                <div class="col-sm-4 film">
-                    <div class="">
-                        <img class="img-responsive" src="assets/img/images_for_website/movieposters/methode-times-prod-web-bin-47b59b1a-7054-11e6-acba-85f5c900fc1a.jpg">
-                    </div>
-                    <br>
-                    <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Brand New Suit</span> <small class="col-sm-3 text-right">PG 13</small></h4>
-                        <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 film">
-                    <div>
-                        <img class="img-responsive" src="assets/img/images_for_website/movieposters/kimi-no-na-wa.jpg">
-                    </div>
-                    <br>
-                    <div class="film-content">
-                        <h4><span class="col-sm-9 remove-padding">Stars Overload</span> <small class="col-sm-3 text-right">PG 13</small></h4>
-                        <hr>
-                        <p class="movie-description">Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu. Nulla facilisi. Phasellus lacinia, felis cursus ornare blandit, nulla turpis tempus ligula, et hendrerit lectus urna eu odio. Quisque auctor venenatis nisl, non ultrices sem imperdiet pretium</p>
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <a href="" class="btn btn-default">MORE</a>
-                                <a href="" class="btn btn-primary">TRAILER</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="clearfix"></div>
-            <div class="row" style="margin-top: 25px;">
-                <div class="col-sm-12 text-center">
-                    <a href="" class="btn btn-primary">SEE FULL LIST OF MOVIES <i class="fa fa-chevron-right"></i></a>
-                </div>
-            </div>
-            <br>
-            <br>
-        </div>
-    </section>
-
-    <div class="clearfix"></div>
-    <div class="container"> <hr> </div>
 
 
-    <!-- COMING SOON SECTION -->
-    <section>
-        <div class="container">
+                    <div class="form-group">
+                        <label for="venue" class="col-sm-3 control-label" style="margin-top: 0">Venue</label>
+                        <div class="col-sm-9">
 
-            <div class="row">
-                <div class="section-header">
-                    <h3>COMING SOON</h3>
-                </div>
-            </div>
+                            <div class="row">
+                                <div class="col-sm-4" >
+                                    <div class="radio" id="venue">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+                                            <span class="text-center" style="color: #800a0e; height: 36px; line-height: 36px; border: 2px solid #800a0e; width: 90px; display: block;">
+                                                <span style="font-family: 'Gotham Bold', sans-serif;">REDRUM</span>
+                                            </span>
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="slick-slider">
-
-                        <div class="slick-slide">
-                            <img class="slide-image" src="assets/img/images_for_website/movieposters/wizard-oz.jpg">
-                            <div class="slide-content">
-                                <h4>Wiz wiz <small class="pull-right">PG 13</small></h4>
-                                <hr>
-                                <p class="movie-description">
-                                    Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien.
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <a href="" class="btn btn-default">MORE</a>
-                                        <a href="" class="btn btn-dark" >TRAILER</a>
+                                            <span style="color: #d9d9d9; margin: 15px 0; display: block">
+                                                Room Details <br/>
+                                                265 m<sup>2</sup> Room <br/>
+                                            </span>
+                                        </label>
                                     </div>
+                                </div>
+
+                                <div class="col-sm-8">
+                                    <img class="img-responsive" src="assets/img/roomsForHire/red.png">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4" >
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+
+                                            <span class="text-center" style="color: #2b7850; height: 36px; line-height: 36px; border: 2px solid #2b7850; width: 130px; display: block;">
+                                                <span style="font-family: 'Gotham Bold', sans-serif;">GREEN ROOM</span>
+                                            </span>
+
+                                            <span style="color: #d9d9d9; margin: 15px 0; display: block">
+                                                Room Details <br/>
+                                                265 m<sup>2</sup> Room <br/>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-8">
+                                    <img class="img-responsive" src="assets/img/roomsForHire/green.png">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4" >
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+
+                                            <span class="text-center" style="color: #fff; height: 36px; line-height: 36px; border: 2px solid #fff; width: 80px; display: block;">
+                                                <span style="font-family: 'Gotham Bold', sans-serif;">FOYER</span>
+                                            </span>
+
+                                            <span style="color: #d9d9d9; margin: 15px 0; display: block">
+                                                Room Details <br/>
+                                                265 m<sup>2</sup> Room <br/>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-8">
+                                    <img class="img-responsive" src="assets/img/roomsForHire/foyer.png">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4" >
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option3">
+
+                                            <span class="text-center" style="color: #fff; height: 36px; line-height: 36px; border: 2px solid #fff; width: 140px; display: block;">
+                                                <span style="font-family: 'Gotham Bold', sans-serif;">OTHER SPACES</span>
+                                            </span>
+
+                                            <span style="color: #d9d9d9; margin: 15px 0; display: block">
+                                                Room Details <br/>
+                                                265 m<sup>2</sup> Room <br/>
+                                            </span>
+
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-8">
+                                    <img class="img-responsive" src="assets/img/roomsForHire/foyer.png">
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label">Date</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="date" placeholder="DD/MM/YYYY">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label">Time</label>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="from" class="col-sm-3 control-label">From</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="from" placeholder="HH:MM">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="to" class="col-sm-3 control-label">To</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="to" placeholder="HH:MM">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label">Brief Description and other requests</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <div style="border: 1px solid #fff;padding: 25px 0; display: table">
+                            <label for="date" class="col-sm-3 text-left">For Film Screening (Publicised)</label>
+
+                            <div class="col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        I have acquired licenses for the film
+                                    </label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        I have MDA ratings for the film
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <label for="format" class="col-sm-3 control-label" style="text-align: left">Film Format</label>
+                                <div class="col-sm-9 remove-horizontal-padding">
+                                    <input type="text" class="form-control" id="format" placeholder="Film Format">
                                 </div>
                             </div>
                         </div>
-
-                        <div class="slick-slide">
-                            <img class="slide-image" src="assets/img/images_for_website/movieposters/moonlight-movie-reviews.jpg">
-                            <div class="slide-content">
-                                <h4>Random Guy <small class="pull-right">PG 13</small></h4>
-                                <hr>
-                                <p class="movie-description">
-                                    Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu.
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <a href="" class="btn btn-default">MORE</a>
-                                        <a href="" class="btn btn-dark" >TRAILER</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="slick-slide">
-                            <img class="slide-image" src="assets/img/images_for_website/movieposters/Miss-Saigon.jpg">
-                            <div class="slide-content">
-                                <h4>Stars Overload <small class="pull-right">PG 13</small></h4>
-                                <hr>
-                                <p class="movie-description">
-                                    Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu.
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <a href="" class="btn btn-default">MORE</a>
-                                        <a href="" class="btn btn-dark">TRAILER</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <br/>
+
+                    <div class="form-group">
+                        <div class="col-sm-9">
+                            <button type="submit" class="btn btn-gold">submit</button>
                         </div>
+                    </div>
+                </form>
 
-                        <div class="slick-slide">
-                            <img class="slide-image" src="assets/img/images_for_website/movieposters/Miss-Saigon.jpg">
-                            <div class="slide-content">
-                                <h4>Stars Overload <small class="pull-right">PG 13</small></h4>
-                                <hr>
-                                <p class="movie-description">
-                                    Nunc leo felis, efficitur id mauris ac, venenatis tincidunt sapien. Nam vitae erat tincidunt, feugiat nulla at, dignissim arcu.
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <a href="" class="btn btn-default">more</a>
-                                        <a href="" class="btn btn-primary">trailer</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> <!-- slick -->
-                </div>    <!-- col -->
-            </div> <!-- row -->
-
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <a href="" class="btn btn-primary">see full list of movies <i class="fa fa-chevron-right"></i></a>
-                </div>
             </div>
-            <br>
-            <br>
+
         </div>
-    </section>
 
-    <div class="clearfix"></div>
-    <div class="container"> <hr> </div>
+        <div class="clearfix"></div>
+    </div> <!-- row -->
+    <br>
+    <br>
+</div> <!-- container -->
 
-    <!-- EVENTS section -->
-    <section id="event">
-        <div class="container">
 
-            <div class="section-header">
-                <h3>EVENT</h3>
+<div class="clearfix"></div>
+<div class="container"> <hr> </div>
+
+<!-- Footer -->
+<section id="footer">
+    <div class="container">
+        <div class="">
+            <div class="col-sm-4">
+                <img class="img-responsive" style="margin: auto" src="assets/img/logo/logo-footer.png">
             </div>
-
-            <div class="row">
-                <div class="col-md-4 featured-event">
-                    <img class="img-responsive" src="assets/img/images_for_website/events/14141663_10154057777728152_6750793091474051325_n.jpg">
-                </div>
-
-                <div class="col-md-4 featured-event">
-                    <img class="img-responsive" src="assets/img/images_for_website/events/wizard_of_oz_ver2_xlg.jpg">
-                </div>
-
-                <div class="col-md-4 featured-event">
-                    <img class="img-responsive" src="assets/img/images_for_website/events/14463038_1853426448219894_2978553332874255344_n.jpg">
-                </div>
-
-                <div class="col-md-4 featured-event">
-                    <img class="img-responsive" src="assets/img/images_for_website/events/14681901_1858118001084072_7374303229993464418_o.jpg">
-                </div>
-
-                <div class="col-md-4 featured-event">
-                    <img class="img-responsive" src="assets/img/images_for_website/events/16179713_1918214778407727_307249267848826523_o.jpg">
-                </div>
-
-                <div class="col-md-4 featured-event">
-                    <img class="img-responsive" src="assets/img/images_for_website/events/Project_IFFR@2x.gif">
-                </div>
-
+            <div class="col-sm-4">
+                <h5>HIRE THE CINEMA</h5>
+                <p class="footer-description">
+                    Previous clients to hire this unique space have included Google, Netflix, Silkair, Ikea, Guinness, Audemanrs Piguet, Universal Music, Expedia, Harley Davidson, StarHub, Edelman, Sony Playstation and many many more.
+                    <br>
+                    <br>
+                    Please e-mail <a href="#" class="gold-url">info+hire@theprojector.sg</a> where one of our team will respond to your request.
+                </p>
             </div>
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <a href="" class="btn btn-primary">SEE FULL LIST OF EVENTS <i class="fa fa-chevron-right"></i></a>
-                </div>
-            </div>
-            <br>
-            <br>
-        </div>
-    </section>
-
-    <div class="clearfix"></div>
-    <div class="container"> <hr> </div>
-
-    <!-- Join mailing list -->
-    <section id="newsletter-subscription">
-        <div class="container">
-
-            <div class="section-header">
-                <h3>JOIN OUR MAILING LIST</h3>
-            </div>
-
-            <div class="row text-center">
-                <div class="col-sm-3">
-                    <input class="form-control" type="text" name="first_name" placeholder="FIRST NAME">
-                </div>
-                <div class="col-sm-3">
-                    <input class="form-control" type="text" name="last_name" placeholder="LAST NAME">
-                </div>
-                <div class="col-sm-3">
-                    <input class="form-control" type="email" name="email" placeholder="EMAIL">
-                </div>
-                <div class="col-sm-3">
-                    <button class="btn btn-default btn-block" type="submit" style="margin: 15px 0">SUBMIT</button>
-                </div>
+            <div class="col-sm-4">
+                <h5>WHERE WE ARE</h5>
+                <p class="footer-address">
+                    6001 BEACH ROAD
+                    #05-00 GOLDEN MILE TOWER
+                    SINGAPORE 199589
+                    <br><br>
+                    NEAREST MRT - NICOLL HIGHWAY CC5
+                </p>
             </div>
         </div>
-    </section>
 
-    <div class="clearfix"></div>
-    <div class="container"> <hr> </div>
+        <div class="clearfix"></div>
+        <div class="container"> <hr> </div>
 
-    <!-- Footer -->
-    <section id="footer">
-        <div class="container">
-            <div class="">
-                <div class="col-sm-4">
-                    <img class="img-responsive" style="margin: auto" src="assets/img/images_for_website/logo/logo-footer.png">
-                </div>
-                <div class="col-sm-4">
-                    <h5>HIRE THE CINEMA</h5>
-                    <p class="footer-description">
-                        Previous clients to hire this unique space have included Google, Netflix, Silkair, Ikea, Guinness, Audemanrs Piguet, Universal Music, Expedia, Harley Davidson, StarHub, Edelman, Sony Playstation and many many more.
-                        <br>
-                        <br>
-                        Please e-mail <span class="gold-url">info+hire@theprojector.sg</span> where one of our team will respond to your request.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <h5>WHERE WE ARE</h5>
-                    <p class="footer-address">
-                        6001 BEACH ROAD
-                        #05-00 GOLDEN MILE TOWER
-                        SINGAPORE 199589
-                        <br><br>
-                        NEAREST MRT - NICOLL HIGHWAY CC5
-                    </p>
-                </div>
+        <div class="" style="padding: 10px 0">
+            <div class="col-sm-4 text-center" style="margin-bottom: 20px;">
+                <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
-
-            <div class="clearfix"></div>
-            <div class="container"> <hr> </div>
-
-            <div class="" style="padding: 10px 0">
-                <div class="col-sm-4 text-center" style="margin-bottom: 20px;">
-                    <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a class="social-media-btn" href="/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-sm-2 text-center">
-                    <a class="footer-description text-center">CONTACT US</a>
-                </div>
-                <div class="col-sm-2 text-center">
-                    <a class="footer-description text-center">FAQs</a>
-                </div>
-                <div class="col-sm-2 text-center">
-                    <a class="footer-description text-center">TERMS OF SERVICE</a>
-                </div>
-                <div class="col-sm-2 text-center">
-                    <a class="footer-description text-center">PRIVACY POLICY</a>
-                </div>
+            <div class="col-sm-2 text-center">
+                <a class="footer-description text-center">CONTACT US</a>
             </div>
-
-            <div class="clearfix"></div>
-            <div class="container"> <hr> </div>
+            <div class="col-sm-2 text-center">
+                <a class="footer-description text-center">FAQs</a>
+            </div>
+            <div class="col-sm-2 text-center">
+                <a class="footer-description text-center">TERMS OF SERVICE</a>
+            </div>
+            <div class="col-sm-2 text-center">
+                <a class="footer-description text-center">PRIVACY POLICY</a>
+            </div>
         </div>
-    </section>
+
+        <div class="clearfix"></div>
+        <div class="container"> <hr> </div>
+    </div>
+</section>
 
 
 
+<!--Script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!--Script-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- slick -->
+<!--<script src="assets/vendor/slick/slick.min.js"></script>-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-    <!-- slick -->
-    <!--<script src="assets/vendor/slick/slick.min.js"></script>-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- pickadate -->
+<script src="bower_components/pickadate/lib/picker.js"></script>
+<script src="bower_components/pickadate/lib/picker.date.js"></script>
+<script src="bower_components/pickadate/lib/picker.time.js"></script>
 
-    <!-- pickadate -->
-    <script src="bower_components/pickadate/lib/picker.js"></script>
-    <script src="bower_components/pickadate/lib/picker.date.js"></script>
-    <script src="bower_components/pickadate/lib/picker.time.js"></script>
-
-    <!-- typekit fonts -->
-    <!--<script type="text/javascript" src="https://use.typekit.net/gla7wnd.js"></script>-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
-
-    <script type="text/javascript">
-        $( document ).ready(function()
-        {
-
-            $('#calendar').html( moment().format("[TODAY] | ddd, DD MMM") );
-
-            $('.carousel').carousel();
-
-            $('.slick-slider').slick({
-                centerMode: true,
-                infinite: true,
-                slidesToShow: 3,
-                speed: 500,
-                variableWidth: true,
-                mobileFirst: true,
-                arrows: true,
-                responsive: [
-
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            arrows: true
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-
-                ]
-            });
-
-
-            $('#calendar').pickadate({
-                format: 'DAY | ddd, dd mmm',
-                onSet: function(context) {
-                    var date = new Date( context.select );
-                    $('#calendar').html( moment(date).format("[DAY] | ddd, DD MMM") );
-                }
-            });
-
-            $('.box').matchHeight();
-
-            $( ".buy-btn:last" ).removeClass( "time-line" );
-
-        });
-
-    </script>
-
+<!-- typekit fonts -->
+<script type="text/javascript" src="https://use.typekit.net/gla7wnd.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
 
 </body>
 </html>
