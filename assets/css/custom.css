@@ -286,6 +286,43 @@ button {
     color: #fff;
 }
 
+.picker__box,
+.picker__header,
+.picker__footer,
+.picker__box > ul *,
+.picker__list {
+    background: #000;
+    color: #fff;
+    font-family: "Gotham Medium", sans-serif;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.picker__button--today,
+.picker__button--clear,
+.picker__button--close {
+    border: 1px solid #ffffff;
+    background: #000;
+    font-family: "Gotham", sans-serif;
+    text-transform: uppercase;
+    padding: .66em 0;
+    font-weight: bold;
+    width: 33%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+}
+
+.picker__nav--next:before {
+    border-right: 0;
+    border-left: 0.75em solid #fff;
+}
+
+.picker__nav--prev:before {
+    border-left: 0;
+    border-right: 0.75em solid #fff;
+}
+
 
 /* Media Queries */
 
@@ -1102,8 +1139,7 @@ input[type="number"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
-textarea {
+input[type="search"] {
     color: #fff;
     border: 1px solid #ccc;
     -webkit-box-sizing: border-box;
@@ -1120,6 +1156,9 @@ textarea {
 }
 
 textarea {
+    letter-spacing: 1px;
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 0.8em;
     width: 100% !important;
     resize: none;
 }
@@ -1170,6 +1209,12 @@ button[type="submit"] {
 .form-control::-moz-placeholder, /* Firefox 19+ */
 .form-control:-ms-input-placeholder /* IE 10+ */  {
     color: #ccc;
+}
+
+#from_time, #date {
+    color: #fff;
+    border: 1px solid #ccc;
+    background-color: #000;
 }
 
 /* Custom Checkbox */
@@ -1223,8 +1268,7 @@ input[type=checkbox] {
 }
 
 
-
-/*media queries*/
+/* Media Queries */
 
 @media screen and ( max-width: 991px ) {
     #instructor .container {
@@ -1455,5 +1499,6 @@ a {
     padding: 0 10px;
     font-size: 18px;
 }
+
 
 

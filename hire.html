@@ -21,6 +21,9 @@
     <link rel="stylesheet" type="text/css" href="bower_components/pickadate/lib/themes/default.date.css">
     <link rel="stylesheet" type="text/css" href="bower_components/pickadate/lib/themes/default.time.css">
 
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+
     <!-- TypeKit Font -->
     <!--<link rel="stylesheet" type="text/css" href="assets/fonts/proxima-nova/fonts/fonts.min.css"/>-->
 
@@ -296,7 +299,6 @@
                                         <div class="radio">
                                             <label>
                                                 <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-
                                                 <span class="text-center" style="color: #fff; height: 36px; line-height: 36px; border: 2px solid #fff; width: 80px; display: block;">
                                                     <span style="font-family: 'Gotham Bold', sans-serif;">FOYER</span>
                                                 </span>
@@ -345,8 +347,13 @@
 
                         <div class="form-group">
                             <label for="date" class="col-sm-3 control-label">Date</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="date" placeholder="DD/MM/YYYY">
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="date" placeholder="DD/MM/YYYY" value="">
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="" id="calendar" name="date" title="Select Date" style="" value="">
+                                    <img class="img-responsive" src="assets/img/icons/calendar.svg" style="height: 30px; margin-top: 20px;">
+                                </button>
                             </div>
                         </div>
 
@@ -356,18 +363,28 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="from" class="col-sm-3 control-label">From</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="from" placeholder="HH:MM">
+                                            <label for="from_time" class="col-sm-3 control-label">From</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="from_time" placeholder="HH:MM" value="">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="" id="from_clock" name="date" title="Select Date" style="" value="">
+                                                    <img class="img-responsive" src="assets/img/icons/clock.svg" style="height: 30px; margin-top: 20px;">
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="to" class="col-sm-3 control-label">To</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="to" placeholder="HH:MM">
+                                            <label for="to_time" class="col-sm-3 control-label">To</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="to_time" placeholder="HH:MM" value="">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="" id="to_clock" name="date" title="Select Date" style="" value="">
+                                                    <img class="img-responsive" src="assets/img/icons/clock.svg" style="height: 30px; margin-top: 20px;">
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -512,8 +529,52 @@
     <script src="bower_components/pickadate/lib/picker.time.js"></script>
 
     <!-- typekit fonts -->
-    <script type="text/javascript" src="https://use.typekit.net/gla7wnd.js"></script>
+    <!--<script type="text/javascript" src="https://use.typekit.net/gla7wnd.js"></script>-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+
+    <script type="text/javascript">
+        $( document ).ready(function()
+        {
+
+            $('#calendar').pickadate({
+                format: 'DAY | ddd, dd mmm',
+                onSet: function(context) {
+                    var date = new Date( context.select );
+                    $('#date').val( moment(date).format("DD/MM/YYYY") );
+                }
+            });
+
+            $('#date').pickadate({
+                format: 'DAY | ddd, dd mmm',
+                onSet: function(context) {
+                    var date = new Date( context.select );
+                    $('#date').val( moment(date).format("DD/MM/YYYY") );
+                }
+            });
+
+            $('#from_time').pickatime({
+                min: [7,30],
+                max: [23,0]
+            });
+
+            $('#from_clock').pickatime({
+                min: [7,30],
+                max: [23,0]
+            });
+
+            $('#to_time').timepicker({
+                'disableTimeRanges': [
+                    ['1am', '9am']
+                ]
+            });
+
+        });
+
+    </script>
+
 
 </body>
 </html>
