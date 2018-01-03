@@ -57,7 +57,7 @@
 
 body {
     font-family: 'Gotham', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     background: rgb(0, 0, 0);
     color: #fff;
     line-height: 1.5em;
@@ -71,7 +71,8 @@ body {
 
 
 h3, h4, h5, h6 {
-    font-family: 'Gotham Medium', sans-serif;
+    font-family: 'Gotham Bold', sans-serif;
+    letter-spacing: 1px;
 }
 
 h4 {
@@ -79,8 +80,13 @@ h4 {
     text-transform: uppercase;
 }
 
+h6 {
+    font-size: 1em;
+}
+
 p {
-    font-size: 15px;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 small {
@@ -116,6 +122,7 @@ button {
     border-radius: 0;
     letter-spacing: 1px;
     text-transform: uppercase;
+    padding: 15px 45px;
 }
 
 .btn:focus {
@@ -224,7 +231,7 @@ button {
 .navbar a {
     font-family: 'Gotham Book', sans-serif;
     color: rgb(170, 170, 170);
-    font-size: 0.8em;
+    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-top: 0;
@@ -248,7 +255,7 @@ button {
 
 .navbar .navbar-title a {
     font-family: 'Gotham Bold', sans-serif;
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #fff;
     border-right: solid 1px rgb(120, 120, 120);
     border-left: solid 1px rgb(120, 120, 120);
@@ -273,8 +280,8 @@ button {
 /* Date Picker Input */
 
 .calendar-input-group {
-    font-family: "Gotham Medium", sans-serif;
-    font-size: 1em;
+    font-family: "Gotham Bold", sans-serif;
+    font-size: 1.8em;
     line-height: 30px;
 }
 
@@ -284,6 +291,11 @@ button {
     text-transform: uppercase !important;
     cursor: pointer;
     color: #fff;
+    letter-spacing: 2px;
+}
+
+.picker__header {
+
 }
 
 .picker__box,
@@ -293,7 +305,7 @@ button {
 .picker__list {
     background: #000;
     color: #fff;
-    font-family: "Gotham Medium", sans-serif;
+    font-family: "Gotham", sans-serif;
     text-transform: uppercase;
     border-radius: 0;
 }
@@ -301,7 +313,7 @@ button {
 .picker__button--today,
 .picker__button--clear,
 .picker__button--close {
-    border: 1px solid #ffffff;
+    border: 0;
     background: #000;
     font-family: "Gotham", sans-serif;
     text-transform: uppercase;
@@ -311,6 +323,8 @@ button {
     display: inline-block;
     vertical-align: bottom;
     margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 .picker__nav--next:before {
@@ -321,6 +335,75 @@ button {
 .picker__nav--prev:before {
     border-left: 0;
     border-right: 0.75em solid #fff;
+}
+
+.picker__month, .picker__year {
+    font-size: 18px;
+    font-family: "Gotham Bold", sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+    font-style: normal;
+}
+
+.picker__weekday {
+    font-family: "Gotham Bold", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 18px 0 10px 0;
+    border-top: 1px solid rgb(120, 120, 120);
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.picker__table {
+    font-size: 14px;
+}
+
+.picker__table td {
+    padding: 5px;
+}
+
+.picker__frame {
+    max-width: 400px;
+}
+
+.picker__box {
+    border: 1px solid rgb(120,120,120);
+    box-shadow: none;
+}
+
+.picker__button--today:before {
+    border-top: 0.66em solid rgb(189, 159, 95);
+}
+
+.picker__day--highlighted:hover, .picker--focused .picker__day--highlighted {
+    color: rgb(189, 159, 95);
+    background: transparent;
+    border: 0;
+    font-family: "Gotham Bold" , sans-serif;
+}
+
+.picker__day--today:before {
+    border-top: 0.5em solid rgb(189, 159, 95);
+}
+
+.picker__button--today:hover, .picker__button--clear:hover, .picker__button--close:hover {
+    background: rgb(189, 159, 95);
+    border-bottom: none;
+    color: #fff;
+}
+
+.picker__button--close:before {
+    color: #fff;
+}
+
+.picker__button--clear:before {
+    border-top: 3px solid #fff;
+}
+
+.picker__footer {
+    border-top: 1px solid rgb(120,120,120);
+    padding-top: 0.3em;
 }
 
 
@@ -382,7 +465,7 @@ button {
 .list-group-item {
     position: relative;
     display: block;
-    padding: 30px 0;
+    padding: 25px 0;
     background-color: transparent;
     border: none;
     border-bottom: 0.5px solid #575757;
@@ -400,9 +483,10 @@ button {
     color: #fff;
     text-decoration: none;
     font-size: 1em;
-    line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5em;
 }
 
 .list-group-item.active,
@@ -416,7 +500,7 @@ button {
 .sidebar-badge {
     display: inline-block;
     min-width: 10px;
-    padding: 0 0;
+    padding-left: 10px;
     font-size: 12px;
     font-weight: 700;
     line-height: 1;
@@ -431,7 +515,7 @@ button {
     color: rgb(189, 159, 95);
     display: inline-block;
     min-width: 10px;
-    padding: 0 0;
+    padding-left: 10px;
     font-size: 12px;
     font-weight: 700;
     line-height: 1;
@@ -443,7 +527,7 @@ button {
 }
 
 .list-group-item > .sidebar-badge > svg {
-    width: 22px;
+    width: 17px;
 }
 
 .list-group-item > .sidebar-badge > svg * .cls-1,
@@ -468,8 +552,9 @@ button {
 
 .page-title {
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: 2em;
     margin-bottom: 25px;
+    letter-spacing: 2px;
 }
 
 .nav > li> a.sort-items {
@@ -478,9 +563,10 @@ button {
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 15px;
-    border: 1px solid #fff;
+    padding: 12px 15px;
+    border: 1px solid rgb(120, 120, 120);
     border-radius: 0;
+    letter-spacing: 1px;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
@@ -489,10 +575,14 @@ button {
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 12px 15px;
     background-color: rgb(189, 159, 95);
     border: 1px solid rgb(189, 159, 95);
     border-radius: 0;
+}
+
+.nav-pills {
+    margin-bottom: 10px;
 }
 
 .nav-pills > li + li {
@@ -508,7 +598,6 @@ div > .btn + .btn {
 .breadcrumb {
     background-color: transparent;
     font-size: 1em;
-    font-weight: bold;
     padding-left: 0;
 }
 
@@ -540,7 +629,7 @@ div > .btn + .btn {
     background-clip: content-box;
     bottom: 10%;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -549,12 +638,14 @@ div > .btn + .btn {
     font-family: "Gotham Bold", sans-serif;
     font-size: 2em;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .carousel-caption > p {
-    font-size: 1.2em;
-    padding: 10px 20px;
-    color: rgb(170, 170, 170);
+    font-size: 1em;
+    padding: 20px;
+    color: #ffffff;
+    margin: 0;
 }
 
 .carousel-control i.fa,
@@ -575,6 +666,11 @@ div > .btn + .btn {
 }
 
 /* Movie Time slot */
+
+#movie-timeslot {
+    margin-top: 20px;
+}
+
 
 .movie-list,
 .movie-show-more
@@ -605,6 +701,8 @@ div > .btn + .btn {
     padding: 13px 0 11px;
     /*margin: 10px 0;*/
     /*font-size: 0.8em*/
+    font-family: 'Gotham Bold', sans-serif;
+    letter-spacing: 1px;
 }
 
 .buy-btn {
@@ -613,6 +711,8 @@ div > .btn + .btn {
     color: #fff;
     background-color: rgb(189, 159, 95);
     padding: 12px 0 10px;
+    font-family: 'Gotham Bold', sans-serif;
+    letter-spacing: 1px;
 }
 
 .time-line:after {
@@ -852,6 +952,7 @@ footer li.signup-link a:hover {
 
 .film-content > h4 > small {
     line-height: 1.5em;
+    padding-right: 0px;
 }
 
 .film-content > h4 {
@@ -872,14 +973,14 @@ footer li.signup-link a:hover {
     font-family: "Gotham", sans-serif;
     color: #fff;
     line-height: 1.5em;
-    word-spacing: 2px;
+    /*word-spacing: 2px;*/
     margin-bottom: 25px;
 }
 
 /* Featured Events */
 
 .featured-event {
-    margin: 25px 0;
+    margin: 15px 0px 25px 0px;
     height: 300px;
 }
 
@@ -1141,18 +1242,21 @@ input[type="url"],
 input[type="password"],
 input[type="search"] {
     color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(120,120,120);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 6px 12px;
+    padding: 15px 12px;
     margin: 15px 0;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1px;
     font-family: 'Gotham Medium', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.9em;
     height: 46px;
     text-transform: uppercase;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
 textarea {
@@ -1168,15 +1272,16 @@ button[type="submit"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 6px 12px;
+    padding: 15px 12px;
     margin: 15px 0;
     text-align: center;
     letter-spacing: 1px;
     font-family: 'Gotham bold', sans-serif;
-    font-size: 0.8em;
+    font-size: 1em;
     height: 46px;
     text-transform: uppercase;
 }
+
 
 .form-horizontal .control-label {
     text-align: left;
@@ -1213,7 +1318,8 @@ button[type="submit"] {
 
 #from_time, #date {
     color: #fff;
-    border: 1px solid #ccc;
+    border: 0;
+    border-bottom: 1px solid rgb(120,120,120);
     background-color: #000;
 }
 
@@ -1352,6 +1458,10 @@ section#joinMailingList {
 
 /* Slick Slider */
 
+.slick-slider {
+    margin-top: 15px;
+}
+
 .slick-slide {
     height: 600px !important;
     width: 400px !important;
@@ -1390,7 +1500,7 @@ section#joinMailingList {
     height: 100%;
     z-index: 2;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     -webkit-opacity: 0;
     -moz-opacity: 0;
     opacity: 0;
@@ -1473,6 +1583,11 @@ button.slick-next.slick-arrow {
     color: rgb(170, 170, 170);
     font-size: 1em;
     line-height: 20px;
+    margin: 15px 0px;
+}
+
+a.footer-description.text-center {
+    letter-spacing: 1px;
 }
 
 a {
